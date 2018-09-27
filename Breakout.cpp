@@ -35,8 +35,6 @@ int main()
         }
     }
 
-    numBricks = 1;
-
     Text hud;
     Font font;
     font.loadFromFile("fonts/DS-DIGI.TTF");
