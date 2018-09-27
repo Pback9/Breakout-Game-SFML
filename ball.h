@@ -17,10 +17,9 @@ public:
     Ball(float startX, float startY);
     FloatRect getPos();
     RectangleShape getShape();
-    float getXVel();
     void reboundSides();
     void reboundBrickOrTop();
-    void reboundBat(Paddle paddle);
+    void reboundPaddle(Paddle paddle);
     void hitBottom();
     void update();
 };

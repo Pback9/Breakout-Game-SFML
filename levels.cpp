@@ -2,7 +2,9 @@
 
 using namespace sf;
 
+// create first level layout of the game
 std::vector<std::vector<Brick>> level1(std::vector<std::vector<Brick>> brickVector) {
+    // vector of colors for each row of bricks
     std::vector<Color> colors;
     colors.push_back(Color(200, 75, 76));
     colors.push_back(Color(197, 108, 57));
@@ -12,7 +14,7 @@ std::vector<std::vector<Brick>> level1(std::vector<std::vector<Brick>> brickVect
     colors.push_back(Color(67, 74, 200));
 
 
-
+    // create 6 rows of bricks with 10 bricks in each row
     for (int i = 0; i < 6; i++) {
         std::vector<Brick> brickRow;
         for (int j = 0; j < 10; j++) {
