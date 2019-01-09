@@ -1,5 +1,6 @@
 #include "ball.h"
 #include <math.h>
+
 // constructor
 Ball::Ball(float startX, float startY) {
     pos.x = startX;

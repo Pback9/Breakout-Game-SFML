@@ -24,7 +24,7 @@ int main()
     Paddle paddle(windowWidth / 2-75, windowHeight - 20);
     Ball ball(windowWidth / 2, windowHeight/2);
     std::vector<std::vector<Brick>> bricks;
-    bricks = level1(bricks);    // set 2d vector of bricks to the first level layout
+	bricks = level1(bricks);    // set 2d vector of bricks to the first level layout
 
     // count the number of bricks
     int numBricks = 0;
@@ -143,6 +143,7 @@ int main()
             for (int j = 0; j < bricks[i].size(); j++) {
                 if (bricks[i][j].getStatus() == false) {
                     window.draw(bricks[i][j].getShape());
+					
                 }
             }
         }

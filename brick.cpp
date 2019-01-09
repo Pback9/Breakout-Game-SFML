@@ -10,6 +10,8 @@ Brick::Brick(float xPos, float yPos, sf::Color color) {
     brickShape.setSize(sf::Vector2f(100, 20));  // bricks are 100px * 20px rectangles
     brickShape.setPosition(pos);
     brickShape.setFillColor(color);
+
+	isBroken = false;
     //brickShape.setOutlineColor(outlineColor);
     //brickShape.setOutlineThickness(1);
 }
